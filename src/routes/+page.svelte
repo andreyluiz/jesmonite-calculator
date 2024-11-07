@@ -49,7 +49,13 @@
 
 		<div class="mt-8 flex flex-col items-center justify-center gap-2">
 			<label for="amount" class="text-lg font-bold">{texts[language].totalAmount}</label>
-			<input type="number" id="amount" class="p-2 text-center text-2xl" bind:value={amount} />
+			<input
+				type="number"
+				inputmode="numeric"
+				id="amount"
+				class="p-2 text-center text-2xl"
+				bind:value={amount}
+			/>
 		</div>
 
 		<div class="flex w-full items-center justify-around gap-4">
