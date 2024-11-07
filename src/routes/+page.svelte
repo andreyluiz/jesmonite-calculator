@@ -31,7 +31,7 @@
 		<div class="mt-4 flex items-center justify-center gap-2">
 			<button
 				class="rounded-md border border-gray-200 bg-white p-2"
-				class:bg-blue-500={language === 'pt'}
+				class:!bg-blue-500={language === 'pt'}
 				class:text-white={language === 'pt'}
 				on:click={() => (language = 'pt')}
 			>
@@ -39,7 +39,7 @@
 			</button>
 			<button
 				class="rounded-md border border-gray-200 bg-white p-2"
-				class:bg-blue-500={language === 'en'}
+				class:!bg-blue-500={language === 'en'}
 				class:text-white={language === 'en'}
 				on:click={() => (language = 'en')}
 			>
